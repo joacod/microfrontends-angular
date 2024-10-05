@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:single-spa:microfrontends-angular": "ng build microfrontends-angular --configuration production",
-    "serve:single-spa:microfrontends-angular": "ng s --project microfrontends-angular --disable-host-check --port 9003 --live-reload false"
+    "serve:single-spa": "ng s --project microfrontends-angular --disable-host-check --port 9003 --live-reload false"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "single-spa": ">=4.0.0",
     "single-spa-angular": "^9.2.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "17.0.2",
