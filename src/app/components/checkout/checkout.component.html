@@ -1,0 +1,48 @@
+<section [class.section-border]="showTech">
+  <div class="main-title">
+    <h1>Checkout</h1>
+    <img *ngIf="showTech" [src]="angularLogo" alt="Angular Logo" />
+    <p *ngIf="showTech">
+      Angular version: <strong>{{ angularVersion }}</strong>
+    </p>
+  </div>
+
+  <div *ngIf="checkoutItems.length > 0">
+    <h2>Items in Cart:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of checkoutItems">
+          <td><img *ngIf="item.image" [src]="item.image" /></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price | currency }}</td>
+          <td class="action-column">
+            <button class="remove-item" (click)="removeItem(item.id)">
+              Remove
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Total:</td>
+          <td>{{ total | currency }}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="cart-btn" (click)="reset()">Purchase</button>
+  </div>
+  <div *ngIf="checkoutItems.length === 0">
+    <p>No items in your cart.</p>
+  </div>
+  <div class="modal-container">
+    <app-modal *ngIf="showModal" (close)="closeModal()"></app-modal>
+  </div>
+</section>
