@@ -47,6 +47,22 @@ npm run serve:single-spa
 
 Run the **Root Config** app and open [http://localhost:9000](http://localhost:9000) with your browser to see the web.
 
+## ✍️ DEV.to Articles
+
+To complement this Project, I wrote a **5-part article series on DEV.to**, where I provide detailed explanations and a step-by-step guide. Feel free to explore the articles at your own pace to deepen your understanding of the topic.
+
+**Microfrontends a Developer's Guide:**
+
+- [The Challenges of Monolithic Frontends](https://dev.to/joacod/microfrontends-a-developers-guide-the-challenges-of-monolithic-frontends-49a7)
+- [Advantages and Disadvantages](https://dev.to/joacod/microfrontends-a-developers-guide-advantages-and-disadvantages-2ane)
+- [Tools, Technologies, and Step-by-Step Setup](https://dev.to/joacod/microfrontends-a-developers-guide-tools-technologies-and-step-by-step-setup-49e1)
+- [Exploring Projects and Managing Communication](https://dev.to/joacod/microfrontends-a-developers-guide-exploring-projects-and-managing-communication-19o0)
+- [Best Practices and Lessons Learned](https://dev.to/joacod/microfrontends-a-developers-guide-best-practices-and-lessons-learned-1nlp)
+
+The **goal** is to equip you with both these GitHub repositories and the articles as references, giving you a solid foundation to understand the architecture and confidently build **your own Microfrontends project**.
+
+Now go and build something cool!
+
 ## ☕️ Did you like the project?
 
 You can colaborate with me giving a star ⭐️ to the project or
